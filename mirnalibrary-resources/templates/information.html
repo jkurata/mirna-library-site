@@ -1,0 +1,18 @@
+
+<div class='page-header'>
+	<h1>Library Design</h1>
+</div>
+<div>
+	<p>We designed a library of sgRNA targeting human miRNAs. First, all of the human miRNA stemloop locations were downloaded from 
+		<a href="http://www.mirbase.org/">miRBase v21</a>. To ensure sgRNAs which cleave at the ends of the stemloop were identified, 
+		an additional 20 bp before and after the stemloop was added. Then, all possible 20 nucleotide sequences followed by NGG were
+		identified. This list of all possible miRNA-targeting sgRNAs were 
+		scored for on-target activity (<a href="http://www.nature.com/nbt/journal/v32/n12/full/nbt.3026.html">Doench et al., 2014</a>; 
+		<a href="https://doi.org/10.1038/nbt.3437">Doench et al., 2016</a>; <a href="http://www.nature.com/nmeth/journal/v12/n9/full/nmeth.3473.html">Chari
+		et al., 2015</a>) and for off-target activity (<a href="http://www.nature.com/nbt/journal/v31/n9/full/nbt.2647.html">Hsu et al., 2013</a>). They 
+		were also aligned to the human genome (hg19) to ensure each sgRNA only targets miRNA sequences. All of this information was combined to make
+		the 7,382 sgRNA LX-miR library which targets approximately 85% of all miRNAs with at least 4 sgRNAs each.</p>
+	
+</div>
+
+

@@ -1,0 +1,22 @@
+Options -MultiViews
+
+AddHandler application/x-httpd-php56 .php
+
+# disable directory browsing
+#Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
+
+RewriteEngine On
+
+# redirects to index.php
+#RewriteCond %{HTTP_HOST} ^mirnalibrary.jessicakurata.com$
+#RewriteRule ^$ http://mirnalibrary.jessicakurata.com/index.php [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^miRLibrary$
+RewriteRule ^$ miRLibrary/index.php [L,R=301]
+
+# Check if the location is a file or a directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# If it is not a file or directory, anything which matches the re will be directed to index.php
+RewriteRule ^(.*?)$ index.php [QSA,L]
+

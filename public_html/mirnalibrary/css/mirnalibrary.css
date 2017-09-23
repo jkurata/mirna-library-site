@@ -1,0 +1,172 @@
+/* Basic Elements */
+html{
+	position: relative;
+	min-height: 100%;
+}
+body{
+	/* This padding is necessary to get out from under the navbar */
+	padding-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	/* This margin is to allow for footer */
+	margin-bottom: 60px;
+}
+p{
+	font-size: 1.5em;
+}
+input{
+	max-width: 100%;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* Displays a centered figure with a caption only as wide as the figure*/
+figure img{
+	width: 100%;
+}
+figure{
+	text-align: center;
+	display: table;
+	max-width: 90%;
+	margin: 20px auto;
+}
+figcaption{
+	font-size: 1.2em;
+	display: table-caption;
+	caption-side: bottom;
+	padding: 15px;
+}
+
+
+/* Specific Wrappers */
+
+/* Make the navbar white*/
+.navbar-default{
+	background-color: white;
+	background-image: none;
+	background-repeat: no-repeat;
+}
+/*make the link background turn grey when hovered over*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+	background-color: #E7E7E7;
+}
+/* Make the brand text black and aligned to icon */
+.navbar-default .navbar-brand{
+	color: black;
+	vertical-align: middle;
+}
+/* Don't change the brand text color when hovered over */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black;
+}
+/* Make icon and brand text fit the navbar */
+.navbar-brand{
+	padding: 5px;
+	height: 50px;
+}
+.navbar-image{
+	height:40px;
+	width:40px;
+	vertical-align:middle;
+	margin-right:5px;
+}
+#footer{
+	text-align: center;
+	font-size: 0.75em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+/* For any row in the table with a long sequence
+They are all td elements of the sequence class */
+.search-title{
+	text-align: center;
+}
+.search-form{
+	margin-top:60px;
+}
+td.sequence {
+	white-space: normal;
+	font-size:0.75em;
+}
+
+th.sequence {
+	white-space: normal;
+}
+/* This only wraps the sgRNA or miRNA results from a search */
+#search-output{
+	white-space: nowrap;
+}
+#search-output .long-row{
+	white-space: normal;
+}
+/* 
+This adds commas between the sgRNA or miRNA results from a search 
+without a comma after the last result
+*/
+ul.result-links{
+	padding: 0;
+	margin: 0;
+}
+.result-links li{
+	display: inline;
+}
+.result-links li:before{
+	content: ", ";
+}
+.result-links li:first-child:before{
+	content: "";
+}
+
+.target-panel .target-info:before{
+	content:"<hr>";
+}
+.target-panel .target-info:first-child:before{
+	content: "";
+}
+/* miRNA diagram */
+.miR-diagram{
+	font-family: monospace;
+	margin: 20px;
+	text-align: center;
+}
+/* Bolds the mature miRNA */
+.miR-diagram .miR{
+	font-weight: bold;
+}
+/* Colors the 20 nts of the primary miRNA extended sequence grey */
+.miR-diagram .extSeq{
+	color: #C0C0C0;
+}
+
+/* Adds extra space between rows on pri and sg pages*/
+.pri-panel .row, .sg-panel .row, .target-panel .row{
+	margin-bottom: 10px;
+}
+
+/* color and margins for info button */
+.info-sign{
+	color: black;
+	margin: 0;
+}
+
+/* table of sgRNAs for a given primary miRNA */
+.jqHover{
+	background-color: #C0C0C0 !important;
+}
+.sgRNA-seq{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+/* Information page formating */
+.information-list > li{
+	font-size: 1.5em;
+}

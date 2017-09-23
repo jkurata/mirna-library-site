@@ -1,0 +1,199 @@
+<div class='page-header'>
+	<h1>The CRISPR-Cas9 System</h1>
+</div>
+<div>
+	<figure>
+		<img src="{{home}}/images/Ran et al Cas9-sgRNA.jpg" class="center" height="300" width="600">
+		<figcaption><b>CRISPR-Cas9 System:</b> The sgRNA forms a complex with Cas9 which then creates a DNA double-strand breack upstream of a 
+		PAM sequence (<a href="http://dx.doi.org/10.1038/nprot.2013.143">Ran et al., 2013</a>)</figcaption>
+	</figure>
+	<h2>Background</h2>
+	<p>The CRISPR-Cas9 system is a prokaryotic immune system which protects against viral infection. CRISPR (clustered regularly interspaced
+	short palindromic repeat) was first described in 1987 (<a href="http://jb.asm.org/content/169/12/5429.short">Ishino et al., 1987</a>)
+	as a series of short repeats (23-55 nts) interspaced between short regions of the <i>E. coli</i> genome. The function of CRISPR was not known until
+	2005, when genomic analysis methods allowed the short regions to be identified as derived from phages and other extrachromosomal elements 
+	(<a href="http://dx.doi.org/10.1099/mic.0.28048-0">Bolotin et al., 2005</a>, <a href="http://dx.doi.org/10.1007/s00239-004-0046-3">Mojica et al., 2005</a>,
+	<a href="http://dx.doi.org/10.1099/mic.0.27437-0">Pourcel et al., 2005</a>). This lead to the theory the CRISPR system may be a bacterial 
+	immune system which protects the cells from foreign DNA. The ability of bacteria to incorporate phage DNA into their genome and become 
+	resistant to re-infection was shown in 2007 (<a href="http://dx.doi.org/10.1126/science.1138140">Barrangou et al., 2007</a>). The phages, however,
+	can mutate and no longer be recognized by the CRISPR system, despite the CRISPR system allowing for some variation in the phage sequence. This
+	adaption by the phages necessitates continual adaption and incorporate by the prokaryote.
+	</p>
+	<figure>
+		<img src="{{home}}/images/Deveau et al general CRISPR systems.jpg" height="350" width="350">
+		<figcaption><b>CRISPR Immune Systems:</b> CRISPR systems act as prokaryotic immune systems which incorporate short streaches of phage
+		DNA into their genome and then use these regions to defend against re-infection. The phages can mutate and become resistant to this system
+		(<a href="http://dx.doi.org/10.1146/annurev.micro.112408.134123">Deveau et al., 2010</a>).</figcaption>
+	</figure>
+	<p>Once the functional importance of the CRISPR systems was understood, further studies were undertaken to understand the components of these
+	systems. The RNA portion of the CRISPR system includes a phage targeting region and the short repeat, which provides a conserved secondary structure
+	for the RNA (<a href="http://dx.doi.org/10.1186/gb-2007-8-4-r61">Kunin et al., 2007</a>). The protein component of this sytem is provided by
+	the Cas (CRISPR-associated sequences) proteins. The number of Cas proteins vary in different prokaryotic genomes (<a href="http://dx.doi.org/10.1371/journal.pcbi.0010060">Haft et al., 2005</a>)   
+	and can divide the CRISPR system into three types. The existance of <i>cas3</i> (nuclease-helicase), <i>cas9</i> (nuclease) or <i>cas10</i> (unknown function) divides the CRISPR systems into
+	type I, type II and type III, respectively. Both <i>cas1</i> and <i>cas2</i> are universally present and involved in the acquisition of spacer sequences from invading DNA.
+	These spacer sequence are taken from DNA next to a protospacer 
+	adjacent motif (PAM) (except Type III, which don't have PAM requirement). Several other proteins may also be involved in this process depending on the organism.</p>
+
+	<p>Once the spacer sequence is integrated into the CRISPR array, it can be expressed to combate infection by foreign DNA.
+	The integrated CRISPR array is transcribed as a long pre-crRNA (pre-CRISPR RNA) and cleaved by Cas6 homologs (Type I and III) or RNAse III (Type II).
+	The existance of a transactivating crRNA (tracrRNA) is specific to Type II systems and is what leads to RNAase III cleavage. Cas9 is necessary
+	for this cleavage, so Cas9-tracrRNA-crRNA complex formation may occur at this stage and is highly stable. The end of the crRNA not basepaired to 
+	the tracrRNA is then trimmed to 20 nts to make a mature Type II complex. The Type I complex is formed when the crRNA is bound by the multi-subunit
+	Cascade complex. The Type III CRISPR system forms either a Csm or Cmr complex when the crRNA interacts with several other Cas proteins 
+	(See <a href="http://dx.doi.org/10.1038/nrmicro3279">van der Oost et al., 2014</a> for all of the details of each system). The simplicity 
+	of the Type II system, which only requires Cas9 for complex formation (<a href="http://dx.doi.org/10.1126/science.1225829">Jinek et al., 2012</a>),
+	makes this subset of CRISPR systems ideal for adaption as gene editing tools.</p>
+	<figure>
+		<img src="{{home}}/images/Doudna and Charpentier CRISPR History.jpg" class="center" height="350" width="600">
+		<figcaption><b>History of CRISPR and Genome Editing:</b> The CRISPR system and genome editing have a long history, however the discovery
+		of the ability to use the CRISPR-Cas9 system in human cells has lead to a renewed interest in both fields
+		(<a href="http://dx.doi.org/10.1126/science.1258096">Doudna and Charpentier, 2014</a>).</figcaption>
+	</figure>
+	<p>This system has been engineered for use in human cells (<a href="http://dx.doi.org/10.1126/science.1231143">Cong et al., 2013</a> and
+	<a href="http://dx.doi.org/">Mali et al., 2013</a>). Cas9 from <i>Streptococcus pyogenes</i> was codon optimized
+	for human cells and a nuclear localization signal added (<a href="http://dx.doi.org/10.1126/science.1231143">Cong et al., 2012</a>). These initial experiments in human cells
+	also showed maturation of crRNA without the addition of <i>S. pyogenes</i> RNAse III, indicating human cells may have a native RNAse III able
+	to cleave crRNA (<a href="http://dx.doi.org/10.1126/science.1231143">Cong et al., 2012</a>). The tracrRNA-crRNA
+	complex was also adapted such that a single RNA contains both the 20 nt targeting region from the crRNA and the secondary structure of the 
+	tracrRNA (<a href="http://dx.doi.org/10.1126/science.1225829">Jinek et al., 2012</a>, <a href="http://dx.doi.org/10.1126/science.1232033">Mali
+	et al., 2013</a>). This results in a two component system, a single-guide RNA (sgRNA)
+	and Cas9, whose transfection can be directed to cleave any 20 nt sequence which is followed by a <i>S. pyogenes</i> PAM sequence, NGG.</p>
+	<h3><b>Reviews</b></h3>
+	<ul class="information-list">
+		<li><a href="http://dx.doi.org/10.1126/science.1258096">Doudna and Charpentier, 2014</a>: Discussion about the possible uses of CRISPR-Cas9</li>
+		<li><a href="http://dx.doi.org/10.1146/annurev.micro.112408.134123">Deveau et al., 2010</a>: From the bacterial immune system point of
+		view, before the use of CRISPR in human cells. Good history of the CRISPR system.</li>
+		<li><a href="http://dx.doi.org/10.1038/nrmicro3279">van der Oost et al., 2014</a>: Details about the various types
+		and functions of CRISPR systems.</li>
+	</ul>
+
+	<h2>Cas9-sgRNA-DNA Complex Structure</h2>
+	<p>Cas9 contains two DNA cleavage domains, a HNH domain which cleaves the complementary (target) strand and a RuvC domain which cleaves the
+	non-complementary (non-target) strand (<a href="http://dx.doi.org/10.1126/science.1225829">Jinek et al., 2012</a>). 
+	</p>
+	<p>Several different crystal structures for Cas9 have been solved, including the structures of several varients with
+	different PAM sequence (<a href="http://dx.doi.org/10.1016/j.molcel.2016.02.018">Hirano et al., 2016</a>). The structure
+	of Cas9 in complex with an sgRNA (<a href="http://dx.doi.org/10.1126/science.aab1452">Jiang et al., 2015</a>)
+	</p>
+	<p>When the structure of Cas9 in complex with an sgRNA and 30 bp double-stranded DNA was solved (<a href="http://dx.doi.org/10.1126/science.aad8282">Jiang et al., 2016</a>),
+	the target DNA strand formed a RNA-DNA helix between the recognition (REC) and nuclease (NUC) lobes. The displaced ssDNA runs through a channel
+	in the NUC lobe, with the 9 nucleotides upstream of the PAM most protected by cas9. 
+	</p>
+	<figure>
+		<img src="{{home}}/images/Jiang et al Cas9 Crystal Structure.jpg">
+		<figcaption><b>Cas9-sgRNA-DNA Crystal Structure:</b> The structure of Cas9 shows the opening of the dsDNA and the invasion of the sgRNA
+		(<a href="http://dx.doi.org/10.1126/science.aad8282">Jiang et al., 2016</a>). The purple DNA strand is the non-target strand, the blue
+		strand is the target strand (the strand which basepairs with the sgRNA) and the orange is the sgRNA. The Cas9 protein has the RuvC domain in 
+		blue, the HNH domain in green, the hinge regions in yellow and the helical recognition lobe in grey.</figcaption>
+	</figure>
+
+	<h2>Kinetics of DNA Binding and Cleavage</h2>
+	<p>The kinetics of DNA cleavage by the CRIPSR/Cas9 complex have been studied in detail. Cas9 finds target region by three-dimensional
+	collisions and simple diffusion (<a href="http://dx.doi.org/10.1038/nature13011">Sternberg et al., 2014</a>; 
+	<a href="http://dx.doi.org/10.1126/science.aac6572">Knight et al., 2015</a>). The rate of diffusion is slower in
+	heterochromatic regions <i>in vivo</i> (<a href="http://dx.doi.org/10.1126/science.aac6572">Knight et al., 2015</a>).
+	The binding of Cas9 to PAM sequences
+	in the DNA occurs even without the presence of an sgRNA (<a href="http://dx.doi.org/10.1038/nature13011">Sternberg et al., 2014</a>).
+	This binding is shorter in duration then when the Cas9-sgRNA complex binds to the DNA. The presence of an sgRNA leads to the
+	unwinding of the DNA and formation of an alpha helix in between the sgRNA and the target DNA sequence. This is thought to be 
+	the source of the seed requirement for sgRNAs, as the first 11 bp create a full turn of the helix and stablize the Cas9-sgRNA-DNA
+	interaction. 
+	</p>
+	<h3><b>Steps:</b></h3>
+	<ul class="information-list">
+		<li>Cas9-sgRNA complex formation</li>
+		<li>Cas9 binds to PAM sequence</li>
+		<li>sgRNA DNA invasion</li>
+		<li>Cas9-sgRNA-DNA complex formation</li>
+		<li>DNA cleavage</li>
+	</ul>
+	<p>DNA cleavage seems to require the presence of a PAM sequence to occur with efficiency (<a href="http://dx.doi.org/10.1038/nature13011">Sternberg et al., 2014</a>). 
+	After cleavage, Cas9 remains bound to the cleaved DNA (<a href="http://dx.doi.org/10.1038/nature13011">Sternberg et al., 2014</a>: >45 min; 
+	<a href="http://dx.doi.org/10.1126/science.aac6572">Knight et al., 2015</a>: >5 min; <a href="http://dx.doi.org/10.1038/nbt.3481">Richardson et al., 2016</a>: 
+	~6 hrs). Locally, the non-target PAM-distal DNA strand is released from the complex and open to interactions with 
+	ssDNA (<a href="http://dx.doi.org/10.1038/nbt.3481">Richardson et al., 2016</a>).</p>
+
+	<p>Several recent studies have shown the binding of Cas9 to DNA opens up the region around the target site, making it
+	hypersensitive to DNAse treatment (<a href="http://dx.doi.org/10.1371/journal.pone.0152683">Barkal et al., 2016</a>)
+	and avaliable for HDR oligo binding (<a href="http://dx.doi.org/10.1038/nbt.3481">Richardson et al., 2016</a>). 
+	Both studies showed this opening is not dependent on DNA cleavage by Cas9. <a href="http://dx.doi.org/10.1038/nbt.3481">Richardson 
+	et al.</a> also showed tiling several dCas9 proteins around the cleavage site opened the region further.</p>
+
+	<h2>miRNA Knockout</h2>
+	<p>
+	</p>
+	<p>Homology directed repair has been used to knockout miRNAs and lncRNAs in human cells (<a href="http://dx.doi.org/10.1093/nar/gku1198">Ho et al., 2014</a>). In this
+	work, multiple sgRNAs targeting miR-21 were cloned into 293T cells along with a donor vector containing GFP, Puromycin resitance and the thymidine
+	kinase gene flanked by loxP sites. The donor vector had ~800-bp of homology to the target sites. They also constucted a dual sgRNA vector, with 
+	one sgRNA under the control of the H1 promoter and the other under the control of the U6 promoter. This vector does not seem to be avaliable on 
+	Addgene. 
+	</p>
+
+	<h2>Homology Directed Repair</h2>
+	<p>Homology Directed Repair (HDR) occurs when the dsDNA break is repaired using a DNA template containing arms homologous to the cleavage site
+	and some insertion sequence. In general, the rate of HDR is much lower than the rate of NHEJ, though knocking down factor involved in NHEJ
+	or inhibiting NHEJ using small molecules can increase the relative rate of HDR. When shRNAs were used to knock down the NHEJ factors KU70,
+	KU80 or DNA ligase IV, the NHEJ pathway was significantly supressed and the frequency of HDR increased (<a href="http://dx.doi.org/10.1038/nbt.3198">Chu et al., 2015</a>). 
+	DNA ligase IV can also be supressed by the small-molecule SCR7 (<a href="http://dx.doi.org/10.1016/j.cell.2012.11.054">Srivastava et al., 2012</a>)
+	or degraded by the adenovirus 4 proteins E1B55K and E4orf6 (<a href="http://dx.doi.org/10.1128/JVI.01890-10">Cheng et al., 2011</a>, <a href="http://dx.doi.org/10.1128/JVI.01748-10">Forrester et al., 2011</a>),
+	which has also been shown to supress NHEJ and promote HDR (<a href="http://dx.doi.org/10.1038/nbt.3198">Chu et al., 2015</a>). 
+	</p>
+
+	<p>The kinetics of HDR were studied in detail using <a href="http://www.fortebio.com/bli-technology.html">Bio-Layer Interferometry</a> (BLI) with 
+	substrate DNA bound to the BLI probe (<a href="http://dx.doi.org/10.1038/nbt.3481">Richardson et al., 2016</a>). The DNA/Cas9 complex was found 
+	to have an off rate of ~5.0 &plusmn; 0.3 x 10<sup>-5</sup> s<sup>-1</sup>
+	(a lifetime of 5.5 hrs). The PAM proximal side was found to have a lower off-rate than the PAM distal side and the addition of ssDNA templates
+	with sequences identical to the target strand are able to remove the the PAM distal non-target strand portion of the cleaved DNA-Cas9 complex. 
+	This property was then used to design ssDNA repair templates which have 36 nts of complementarity with the non-target, PAM distal DNA and 91 nts of 
+	complementarity with the non-target, PAM proximal DNA. These templates resulted in HDR frequences of up to 57 &plusmn; 5% when used in combination
+	with RNP nucleofection.</p>
+
+	<p>Another interesting method which has been used to try to increase the frequency of HDR is by fusing Cas9 to the N-terminal region of 
+	<a href="https://en.wikipedia.org/wiki/Geminin">Geminin</a>, a protein whose expression is closely tied to the cell cycle 
+	(<a href="http://dx.doi.org/10.1016/j.celrep.2016.01.019">Gutschner et al., 2016</a>). Since HDR only occurs during S/G2, when two copies
+	of each chromosome are present, dsDNA breaks which occur at other times have to be repaired by NHEJ. They found linking Cas9 expression 
+	to the cell cycle increased the rate of HDR compared to unlinked Cas9 by up to 87%. The absolute rate of HDR remained low, however (~14%).
+	This is not suprising as the previous kinetic studies show there is a significant amount of time between Cas9 cleavage and Cas9 unbinding
+	the DNA to allow for repair.
+	</p>
+
+	<h2>Increasing Cleavage Specificity</h2>
+	<p>In order to decrease the off-target cleavage of the CRISPR-Cas9 system, several different methods have been used. These
+	include shorting the sgRNA and modification of the Cas9 protein. Two different Cas9 nickases have been created by mutating either 
+	the HNH domain (H840A) or the RuvC domain (D10A) (<a href="http://dx.doi.org/10.1126/science.1225829">Jinek et al., 2012</a>). These mutations
+	lead to cleavage of only the non-target or target strand respectively. The use of two nickases results in less off target cleavage 
+	(<a href="http://dx.doi.org/10.1016/j.cell.2013.08.021">Ran et al., 2013</a>). 
+	</p>
+	<p>The delivery of Cas9 protein in complex with RNA (ribonucleoprotein, RNP) directly into cells has also been shown to decrease
+	the number of off-target mutations (<a href="http://dx.doi.org/10.1101/gr.171322.113">Kim et al., 2014</a>). The delivery of
+	pre-formed RNA-protein complexes also increase the mutation frequency at the target site. </p>
+
+	<h2>Other Uses of CRISPR-Cas9</h2>
+	<ul class="information-list">
+		<li><a href="http://dx.doi.org/10.1016/j.cell.2014.11.052">Zalatan et al., 2015</a>: Scaffolds for protien binding and transcriptional
+		regulation </li>
+		<li><a href="http://dx.doi.org/10.1016/j.cell.2014.09.029">Gilbert et al., 2014</a>: CRISPRi/a genome-wide libraries</li>
+		<li><a href="http://dx.doi.org/10.1038/nature14136">Konermann et al., 2015</a>: CRISPRa genome-wide library</li>
+	</ul>
+
+	<h2>Other CRISPR Systems</h2>
+	<ul class="information-list">
+		<li>SpCas9n (<a href="http://dx.doi.org/10.1126/science.1231143">Cong et al., 2012</a>): Nickases which increase specificity as 2 are necessary
+		to create a dsDNA break, single mutation to RuvC (D10A)
+		<li>Cpf1 (<a href="http://dx.doi.org/10.1016/j.cell.2015.09.038">Zetsche et al., 2015</a>): T-rich PAM, smaller protein, staggered cleavage </li>
+		<li>dCas9 (<a href="http://dx.doi.org/10.1016/j.cell.2013.02.022">Qi et al., 2013</a>): Catalytically inactive Cas9 blocks transcription</li>
+		<li>dCas9 + KRAB (<a href="http://dx.doi.org/10.1016/j.cell.2013.06.044">Gilbert et al., 2013</a>): Catalytically inactive Cas 9 fused to 
+		<a href="http://www.pnas.org/content/91/10/4509">KRAB domain</a>, represses gene expression</li>
+		<li>dCas9 + VP64 (<a href="http://dx.doi.org/10.1016/j.cell.2013.06.044">Gilbert et al., 2013</a>): Catalytically inactive Cas9 fused to 4 
+		copies of the VP16 domain, activates gene expression</li>
+		<li>sunCas9 (<a href="http://dx.doi.org/10.1016/j.cell.2014.09.039">Tanenbaum et al., 2014</a>): Catalytically inactive Cas9 fused to SunTag 
+		which recruits up to 24 copies of VP64 fused to a single chain antibody, activates gene expression</li>
+		<li>HPRT enrichment (<a href="http://dx.doi.org/10.1093/nar/gkv675">Liao et al., 2015</a>): Co-transfect sgRNA of interest with sgRNA targeting
+		<a href="https://en.wikipedia.org/wiki/Hypoxanthine-guanine_phosphoribosyltransferase">hypoxanthine phosphoribosyltransferase</a> (HPRT) and 
+		treat cells with <a href="https://en.wikipedia.org/wiki/Tioguanine">6-thioguianine</a> to kill cells without sgRNAs </li>
+		<li>Single base editing (<a href="http://dx.doi.org/10.1038/nature17946">Komor et al., 2016</a>): Catalytically inactive Cas9 fused to 
+		<a href="http://www.uniprot.org/uniprot/P38483">rat APOBEC1</a>, which converts C&rarr;U, on N-terminus and 
+		<a href="https://www.neb.com/products/m0281-uracil-glycosylase-inhibitor-ugi">PBS1</a>, a uracil-DNA glycosylase inhibitor, on the C-terminus. 
+		This leads to up to 20% C&rarr;T conversion of C's in positions 4 to 8 of the protospacer</li>
+	</ul>
+</div>

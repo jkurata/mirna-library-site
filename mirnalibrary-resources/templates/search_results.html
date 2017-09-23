@@ -1,0 +1,35 @@
+
+<!-- This puts a header panel on the table -->
+<div class='panel panel-default'>
+	<div class='panel-heading'><b>Search Results</b></div>
+	<div class='panel-body'>
+		<p>
+			<b>{{rowNum}}</b> matches for {{term}} found in our database of {{type}}s 
+		</p>
+	</div>
+	<table id='search-output' class='tablesorter'>
+		<thead>
+			<tr>
+				{{# header}}
+				<th>{{.}}</th>
+				{{/ header}}
+			</tr>
+		</thead>
+		<tbody>
+			{{# reArray}}
+			<tr>
+				<td><a href='{{home}}/{{link}}/view/{{id}}/'>{{id}}</a></td>
+				<td>{{name}}</td>
+				<td class="long-row">
+					<ul class="result-links">
+					{{# added}}
+					<li><a href='{{home}}/{{otherLink}}/view/{{.}}/'>{{.}}</a></li> 
+					{{/ added}}
+					</ul>
+				</td>
+				<td><span class='glyphicon glyphicon-{{included}}'></span></td>
+			</tr>
+			{{/ reArray}}
+		</tbody>
+	</table>
+</div>

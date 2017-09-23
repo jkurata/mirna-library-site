@@ -1,0 +1,145 @@
+
+<div class='page-header'>
+	<h1>
+		sgRNA ID: {{SgID}} <small text="In pool"><span class='glyphicon glyphicon-{{includeGraphic}}'></span></small>
+	</h1>
+</div>
+<div class='row'>
+	<div class='sgRNA-seq'>
+		5'- {{SgRNA}} -3'
+	</div>
+</div>
+
+<!-- sgRNA information -->
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<b>SgRNA Information</b>
+	</div>
+	<div class='panel-body sg-panel'>
+		<div class='sg-info'>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Included in Our Pool:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{include}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Included in Zhang Pool:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{InZhang}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Zhang Score:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{ZhangScore}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>SgRNA Scorer:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{SgRNAScorer}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Maximum Doench Score:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{MaxDoenchScore}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Maximum Azimuth Score:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{MaxAzimuthScore}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- Target information -->
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<b>Target(s) Information</b>
+	</div>
+	
+	<div class='panel-body target-panel'>
+		{{# targInfo}}
+		<div class='target-info'>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Primary miRNA Targeted:</b>
+				</div>
+				<div class='col-sm-3'>
+					<a href="{{home}}/PriMiR/view/{{PriID}}">{{PriID}}</a>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Primary miRNA Name:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{PriMiRName}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Targeted Genomic Location:</b>
+				</div>
+				<div class='col-sm-3'>
+					<a href='http://genome.ucsc.edu/cgi-bin/hgTracks?org=human&db=hg38&position=Chr{{SgChr}}:{{SgStart}}-{{SgEnd}}'>
+					Chr{{SgChr}}:{{SgStart}}-{{SgEnd}}	({{SgStrand}})
+					</a>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Mature miRNAs:</b>
+				</div>
+				
+				<!-- Nested columns to list mature miRNAs -->
+				<div class='col-sm-9'>
+					{{# matArray}}
+						<div class='row'>
+							<div class='col-sm-3'>
+								{{MatMiRName}}
+							</div>
+							<div class='col-sm-4'>
+								{{MatSeq}}
+							</div>
+						</div>
+					{{/ matArray}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Doench Score For Target Location:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{DoenchScore}}
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-3 gi-label'>
+					<b>Azimuth Score For Target Location:</b>
+				</div>
+				<div class='col-sm-3'>
+					{{AzimuthScore}}
+				</div>
+			</div>
+		</div>
+		{{/ targInfo}}
+	</div>
+</div>

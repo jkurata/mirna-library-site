@@ -1,0 +1,127 @@
+
+<div class='page-header'>
+	<h1>
+		{{priName}} <small>{{priID}}</small>
+	</h1>
+</div>
+<div class='row'>
+	<div class='miR-diagram'>
+		{{# seq }}
+			{{{1}}}<br>
+			{{{2}}}<br>
+			{{{3}}}<br>
+			{{{4}}}<br>
+			{{{5}}}<br>
+		{{/ seq}}
+	</div>
+</div>
+	
+<!-- General information -->
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<b>General Information</b>
+	</div>
+	
+	<div class='panel-body pri-panel'>
+		<div class='row'>
+			<div class='col-sm-4 gi-label'>
+				<button type="button" class="btn-link info-sign" title="Targeted by LX-miR" 
+				data-content="The miRNA is targeted if 4 or more sgRNAs which target it are include in the library" 
+				data-toggle="popover" data-placement="right"> 
+					<span class="info-sign"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+				</button>
+				<b>Targeted by LX-miR:</b>
+			</div>
+			<div class='col-sm-8'>
+				{{miR-included}}
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-sm-4 gi-label'>
+				<b>Genomic Location (hg38):</b>
+			</div>
+			<div class='col-sm-8'>
+				{{genLoc}}	({{strand}})
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-sm-4 gi-label'>
+				<button type="button" class="btn-link info-sign" title="High Confidence" 
+				data-content="miRBase annotates high confidence miRNAs based on structure and sequencing results. For details, see <a href='http://nar.oxfordjournals.org/content/42/D1/D68.full'>This paper</a>." 
+				data-toggle="popover" data-placement="right" data-html="true"> 
+					<span class="info-sign"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+				</button>
+				<b>High Confidence miRNA?:</b>
+			</div>
+			<div class='col-sm-8'>
+				{{conf}}
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-sm-4 gi-label'>
+				<b>miRNA Family:</b>
+			</div>
+			<div class='col-sm-8'>
+				{{fam}}
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-sm-4 gi-label'>
+				<b>Mature miRNAs:</b>
+			</div>
+			
+			<!-- Nested columns to list mature miRNAs -->
+			<div class='col-sm-8'>
+				{{# matArray}}
+					<div class='row'>
+						<div class='col-sm-2'>
+							{{MatMiRName}}
+						</div>
+						<div class='col-sm-10'>
+							{{MatSeq}}
+						</div>
+					</div>
+				{{/ matArray}}
+			</div>
+		</div>
+	</div>
+	
+	<div class='panel-footer'>
+		View miRNA at: 
+		<div class='btn-group' role='link-out' aria-label='miRNA Links'>
+			<a type='button' class='btn btn-default' aria-label='UCSC link' href='http://genome.ucsc.edu/cgi-bin/hgTracks?org=human&db=hg38&position={{genLoc}}'>
+				UCSC Genome Browser
+			</a>
+			<a type='button' class='btn btn-default' aria-label='miRBase link' href='http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc={{priID}}'>
+				miRBase
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- sgRNA Panel -->
+<div class='panel panel-default'>
+	<div class='panel-heading'>
+		<b>sgRNAs</b>
+	</div>
+	<table id='sgRNA-list' class='tablesorter'>
+		<thead>
+			<tr>
+				<th>sgRNA ID</th>
+				<th>Included</th>
+				<th>sgRNA Sequence</th>
+				<th>Show sgRNA</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{# sgArray}}
+			<tr>
+				<td><a href="{{home}}/SgRNA/view/{{ID}}/">{{ID}}</a></td>
+				<td><span class='glyphicon glyphicon-{{included}}'></span></td>
+				<td>{{SgRNA}}</td>
+				<td><input type="checkbox" value="" id="{{ID}}" class="sg-check"></td>
+			</tr>
+			{{/ sgArray}}
+		</tbody>
+	</table>
+</div>

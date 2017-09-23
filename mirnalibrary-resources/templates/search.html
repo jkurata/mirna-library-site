@@ -1,0 +1,26 @@
+
+<div class="search-title"><h1> Search miRNAs and sgRNAs </h1></div>
+<form class="form-horizontal search-form" role="form" method="get" action={{submit_action}}>
+	<div class="form-group">
+		<label for="search-type" class="col-sm-2 control-label">Search By</label>
+		<!-- Removed a bit of padding here to make clear the link between text and dropdown -->
+		<div class="col-sm-3" style="padding-left:0">
+			<select class="form-control" name="search-type" id="search-type">
+				{{#search_types}}
+					<option>{{.}}</option>
+				{{/search_types}}
+			</select>
+		</div>
+		<div class="col-sm-7">
+			<label class="sr-only" for="search-term">Search Term</label>
+			<div class="input-group">
+				<input type="text" class="form-control" name="search-term" placeholder="Search for..." id="search-term">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="submit" id="search_button">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</form>	
