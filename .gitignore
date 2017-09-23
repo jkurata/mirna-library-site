@@ -2,4 +2,4 @@
 mirnalibrary-resources/config.php
 
 # ignore vendor files
-/vendor
+**/vendor
